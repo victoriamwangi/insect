@@ -27,5 +27,33 @@
         </div>
     </div>
 
-
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="txt-box shadow-sm">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi eius
+                        optio
+                        quod doloremque unde ullam ab, laboriosam aliquam harum nostrum tempore mollitia quasi ad, quos
+                        officia
+                        quae maxime sapiente?</p>
+                </div>
+                <div class="col-md-4 d-none d-lg-block"></div>
+                <div class="col-md-8 img-box"
+                    style="background:#fff url({{ asset('img/natalia-terskaya-W0pdzJmTXyE-unsplash.jpg') }})"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 img-box"
+                    style="background:#fff url({{ asset('img/natalia-terskaya-W0pdzJmTXyE-unsplash.jpg') }})"></div>
+              
+                <div class="col-md-4 d-none d-lg-block"></div>
+                <div class="txt-box shadow-sm even">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi eius
+                        optio
+                        quod doloremque unde ullam ab, laboriosam aliquam harum nostrum tempore mollitia quasi ad, quos
+                        officia
+                        quae maxime sapiente?</p>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
