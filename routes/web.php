@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ScansController;
+use App\Http\Controllers\UploadsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +27,5 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('/scans', ScansController::class);
+Route::post('/upload', [UploadsController::class, 'store']);

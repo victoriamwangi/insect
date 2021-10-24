@@ -18,13 +18,20 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    @include('flash::message')
+<div id="app">
         @include('layouts.navs.navbar')
         <main class="">
             @yield('content')
         </main>
+        @include('layouts.navs.footer')
     </div>
+    
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('javascript')
+    <script>
+        $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+        </script>
 </body>
 </html>

@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -20,6 +20,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    @include('flash::message')
+
     <div id="app">
         
 
@@ -27,5 +29,9 @@
             @yield('content')
         </main>
     </div>
+    @yield('javascript')
+    <script>
+        $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+        </script>
 </body>
 </html>
